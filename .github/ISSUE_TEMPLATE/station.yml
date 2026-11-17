@@ -1,0 +1,19 @@
+name: 收录 / 纠错
+description: 推荐一家站，或者告诉我们某个价格不对
+body:
+  - type: input
+    id: url
+    attributes:
+      label: 站点地址
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 哪一档、现在是多少
+      description: 例：「Claude 特价」分组现在是 0.3x，充值 ¥1 = $1
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 价格页截图或链接
+      description: 登录后的令牌分组 / 模型广场 / 充值页
